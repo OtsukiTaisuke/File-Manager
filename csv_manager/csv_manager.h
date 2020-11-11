@@ -7,12 +7,15 @@
 
 class CsvManager{
     public:
-        CsvManager(void){};
+        CsvManager();
+        CsvManager(std::string name);
 
         void newFile();
-         std::string fileName = "/home/taisuke/catkin_ws/cam_bag/naname/csv-file/naname.csv";
-         void lastFile();
-         void write(bool b =true);
+        std::string fileRoot = "/home/taisuke/catkin_ws/cam_bag";
+        std::string filePath = "/1m/csv-file/adjust_gain";
+        std::string fileName = "/adjust_1m_gain.csv";
+        void lastFile();
+        void write(bool b =true);
         CSVWriter csv;
     private:
         bool exitFile(std::string name);

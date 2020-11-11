@@ -1,4 +1,11 @@
 #include "csv_manager.h"
+CsvManager::CsvManager(){
+    fileName = fileRoot + filePath + fileName;
+
+}
+CsvManager::CsvManager(std::string name){
+    fileName = fileRoot + filePath + name;
+}
 
 void CsvManager::newFile(){
     int num = 1;
