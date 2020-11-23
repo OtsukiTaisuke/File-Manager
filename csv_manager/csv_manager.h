@@ -12,8 +12,8 @@ class CsvManager{
 
         void newFile();
         std::string fileRoot = "/home/taisuke/catkin_ws/cam_bag";
-        std::string filePath = "/1m/csv-file/adjust_gain";
-        std::string fileName = "/adjust_1m_gain.csv";
+        std::string filePath = "/tatemannaka/csv-file/rate1";
+        std::string fileName = "/adjust_gain.csv";
         void lastFile();
         void write(bool b =true);
         CSVWriter csv;
