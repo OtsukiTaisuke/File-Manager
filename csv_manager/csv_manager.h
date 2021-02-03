@@ -12,7 +12,7 @@ class CsvManager{
 
         void newFile();
         std::string fileRoot = "/home/taisuke/catkin_ws/cam_bag";
-        std::string filePath = "/tatemannaka/csv-file/rate1";
+        std::string filePath = "/naname_up/csv-file/powerpo5/rate2";
         std::string fileName = "/adjust_gain.csv";
         void lastFile();
         void write(bool b =true);
